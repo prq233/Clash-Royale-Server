@@ -7,3 +7,6 @@ A .net core server for clash royale 2.0.2
 - Buy Chests(have bugs)
 
 **NOTE:** This version is not ready to run on a production enviroment.
+## Requirements
+- MariaDB
+- Redis
