@@ -1517,13 +1517,13 @@
     <Compile Include="Test.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\GL.Patcher\GL.Patcher.csproj">
+    <ProjectReference Include="..\..\GL.Patcher\AL.Patcher.csproj">
       <Project>{15a935b7-d610-435e-9ade-5eb8fcd004ea}</Project>
-      <Name>GL.Patcher</Name>
+      <Name>AL.Patcher</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GL.Servers\GL.Servers.csproj">
+    <ProjectReference Include="..\GL.Servers\AL.Servers.csproj">
       <Project>{5d12a2da-f22e-4813-9394-6409e5c1cb3a}</Project>
-      <Name>GL.Servers</Name>
+      <Name>AL.Servers</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

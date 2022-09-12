@@ -28,23 +28,23 @@
             Console.SetBufferSize(Program.Width, Program.Height);
 
             Servers.Core.Consoles.Colorful.Console.WriteWithGradient(@"
-                      ________      ___.          .__  .__       .____                       .___
-                     /  _____/  ____\_ |__   ____ |  | |__| ____ |    |   _____    ____    __| _/
-                    /   \  ___ /  _ \| __ \_/ __ \|  | |  |/    \|    |   \__  \  /    \  / __ | 
-                    \    \_\  (  <_> ) \_\ \  ___/|  |_|  |   |  \    |___ / __ \|   |  \/ /_/ | 
-                     \______  /\____/|___  /\___  >____/__|___|  /_______ (____  /___|  /\____ | 
-                            \/           \/     \/             \/        \/    \/     \/      \/ 
-                                                                                          V2.0.0
+                        _____   __  .__                 __         .____                       .___
+                      /  _  \_/  |_|  | _____    _____/  |______  |    |   _____    ____    __| _/
+                     /  /_\  \   __\  | \__  \  /    \   __\__  \ |    |   \__  \  /    \  / __ |  
+                    /    |    \  | |  |__/ __ \|   |  \  |  / __ \|    |___ / __ \|   |  \/ /_/ | 
+                    \____|__  /__| |____(____  /___|  /__| (____  /_______ (____  /___|  /\____ |  
+                            \/               \/     \/          \/        \/    \/     \/      \/ 
+                                                                                          V2.0.2
             ", Color.Yellow, Color.Fuchsia, 14);
             
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.WriteLine(Environment.NewLine);
 
-            Console.WriteLine("GobelinLand's programs are protected by our policies, available on our main website.   ");
-            Console.WriteLine("GobelinLand's programs are under the 'CC Non-Commercial-NoDerivs 3.0 Unported' license.");
-            Console.WriteLine("GobelinLand is NOT affiliated to 'Supercell Oy', 'Tencent', or 'Riot Games'.           ");
-            Console.WriteLine("GobelinLand does NOT own 'Clash of Clans', 'Boom Beach', 'Clash Royale', or 'Hay Day'. ");
+            Console.WriteLine("AtlantaLand's programs are protected by our policies, available on our main website.   ");
+            Console.WriteLine("AtlantaLand's programs are under the 'CC Non-Commercial-NoDerivs 3.0 Unported' license.");
+            Console.WriteLine("AtlantaLand is NOT affiliated to 'Supercell Oy', 'Tencent', or 'Riot Games'.           ");
+            Console.WriteLine("AtlantaLand does NOT own 'Clash of Clans', 'Boom Beach', 'Clash Royale', or 'Hay Day'. ");
             Console.WriteLine();
             Console.WriteLine(Assembly.GetExecutingAssembly().GetName().Name + " is now starting..." + Environment.NewLine);
 
