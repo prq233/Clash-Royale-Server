@@ -1,7 +1,16 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.4
+-- https://www.phpmyadmin.net/
+--
+-- 主机： 127.0.0.1
+-- 生成日期： 2022-09-12 16:07:42
+-- 服务器版本： 10.6.9-MariaDB
+-- PHP 版本： 8.0.0
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
+
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -9,46 +18,59 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 
-CREATE TABLE `Battles` (
-  `HighID` int(10) UNSIGNED NOT NULL,
-  `LowID` int(10) UNSIGNED NOT NULL,
-  `Data` text NOT NULL DEFAULT '{}'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-CREATE TABLE `Clans` (
-  `HighID` int(10) UNSIGNED NOT NULL,
-  `LowID` int(10) UNSIGNED NOT NULL,
-  `Data` text NOT NULL DEFAULT '{}'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-CREATE TABLE `Players` (
-  `HighID` int(10) UNSIGNED NOT NULL,
-  `LowID` int(10) UNSIGNED NOT NULL,
-  `Data` text NOT NULL DEFAULT '{}'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-CREATE TABLE `Tournaments` (
+CREATE TABLE `battles` (
   `HighID` int(10) UNSIGNED NOT NULL,
   `LowID` int(10) UNSIGNED NOT NULL,
   `Data` text NOT NULL DEFAULT '{}'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-ALTER TABLE `Battles`
+CREATE TABLE `clans` (
+  `HighID` int(10) UNSIGNED NOT NULL,
+  `LowID` int(10) UNSIGNED NOT NULL,
+  `Data` text NOT NULL DEFAULT '{}'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `players` (
+  `HighID` int(10) UNSIGNED NOT NULL,
+  `LowID` int(10) UNSIGNED NOT NULL,
+  `FacebookID` text CHARACTER SET utf8mb4 DEFAULT NULL,
+  `GoogleID` text CHARACTER SET utf8mb4 DEFAULT NULL,
+  `GamecenterID` text CHARACTER SET utf8mb4 DEFAULT NULL,
+  `Data` text NOT NULL DEFAULT '\'{}\''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `tournaments` (
+  `HighID` int(10) UNSIGNED NOT NULL,
+  `LowID` int(10) UNSIGNED NOT NULL,
+  `Data` text NOT NULL DEFAULT '{}'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+ALTER TABLE `battles`
   ADD PRIMARY KEY (`HighID`,`LowID`),
   ADD KEY `INDEX` (`HighID`,`LowID`) USING BTREE;
 
-ALTER TABLE `Clans`
+
+ALTER TABLE `clans`
   ADD PRIMARY KEY (`HighID`,`LowID`),
   ADD KEY `INDEX` (`HighID`,`LowID`) USING BTREE;
 
-ALTER TABLE `Players`
+
+ALTER TABLE `players`
   ADD PRIMARY KEY (`HighID`,`LowID`),
   ADD KEY `INDEX` (`HighID`,`LowID`) USING BTREE;
 
-ALTER TABLE `Tournaments`
+
+ALTER TABLE `tournaments`
   ADD PRIMARY KEY (`HighID`,`LowID`),
   ADD KEY `INDEX` (`HighID`,`LowID`) USING BTREE;
+
+
+ALTER TABLE `players`
+  MODIFY `HighID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
