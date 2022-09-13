@@ -157,7 +157,20 @@
 
         public void CreateAlliance(int HighID, int LowID, string JSON)
         {
-            throw new NotImplementedException();
+            if (!string.IsNullOrEmpty(JSON))
+            {
+                using (GRS_MySQL MySQL = new GRS_MySQL())
+                {
+                    MySQL.Alliances.Add(new Clans
+                    {
+                        HighID = HighID,
+                        LowID = LowID,
+                        Data = JSON
+                    });
+
+                    MySQL.SaveChanges();
+                }
+            }
         }
 
         /// <summary>
