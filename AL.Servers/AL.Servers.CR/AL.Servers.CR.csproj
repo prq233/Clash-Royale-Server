@@ -414,6 +414,7 @@
     <Compile Include="Packets\Messages\Client\Alliance\AskForAllianceDataMessage.cs" />
     <Compile Include="Packets\Messages\Client\Alliance\ChatToAllianceStreamMessage.cs" />
     <Compile Include="Packets\Messages\Client\Alliance\CreateAllianceMessage.cs" />
+    <Compile Include="Packets\Messages\Client\Alliance\JoinAllianceMessage.cs" />
     <Compile Include="Packets\Messages\Client\Avatar\Ask_For_Avatar_Stream_Message.cs" />
     <Compile Include="Packets\Messages\Client\Avatar\Ask_For_Battle_Replay_Stream_Message.cs" />
     <Compile Include="Packets\Messages\Client\Matchmaking\Cancel_Matchmake_Message.cs" />

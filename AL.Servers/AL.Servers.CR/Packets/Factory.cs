@@ -61,6 +61,8 @@
 
             Factory.Messages.Add(14301, typeof(CreateAllianceMessage));
             Factory.Messages.Add(14302, typeof(AskForAllianceDataMessage));
+            Factory.Messages.Add(14305, typeof(JoinAllianceMessage));
+            Factory.Messages.Add(14308, typeof(ChatToAllianceStreamMessage));
 
             Factory.Messages.Add(14405, typeof(Ask_For_Avatar_Stream_Message));
             Factory.Messages.Add(14406, typeof(Ask_For_Battle_Replay_Stream_Message));
